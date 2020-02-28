@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MkOOPPC.BasicComponents.Case">
+    <Position X="25.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>BasicComponents\Case.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MkOOPPC.BasicComponents.CDDrive">
+    <Position X="18.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAABAA=</HashCode>
+      <FileName>BasicComponents\CDDrive.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MkOOPPC.BasicComponents.CPU">
+    <Position X="21" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>BasicComponents\CPU.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MkOOPPC.BasicComponents.HardDrive">
+    <Position X="32.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAABAAAAAAAAAAAABAA=</HashCode>
+      <FileName>BasicComponents\HardDrive.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MkOOPPC.BasicComponents.Monitor">
+    <Position X="16.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAgAAAAAAEAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>BasicComponents\Monitor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MkOOPPC.BasicComponents.Motherboard">
+    <Position X="28" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>BasicComponents\Motherboard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MkOOPPC.BasicComponents.RAM">
+    <Position X="23.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAABAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>BasicComponents\RAM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MkOOPPC.BasicComponents.PCSystem">
+    <Position X="30" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>BasicComponents\System.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MkOOPPC.PCComponent">
+    <Position X="23.75" Y="4" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAQAAAAAEAAAAQAQAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>PCComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MkOOPPC.Program">
+    <Position X="30.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="PCSystem" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MkOOPPC.CompositeComponent">
+    <Position X="27.5" Y="4" Width="2.5" />
+    <InheritanceLine Type="MkOOPPC.PCComponent" FixedFromPoint="true">
+      <Path>
+        <Point X="26" Y="5.047" />
+        <Point X="27.5" Y="5.047" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAEAAAEBAAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>CompositeComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MkOOPPC.AbstractPCComponent">
+    <Position X="21.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>AbstractPCComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MkOOPPC.DiscountDecorator">
+    <Position X="19.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAgBAAAAABAA=</HashCode>
+      <FileName>DiscountDecorator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MkOOPPC.Factory.Factory&lt;T&gt;">
+    <Position X="29.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Factory\Factory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MkOOPPC.Factory.CaseFactory">
+    <Position X="30.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Factory\CaseFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MkOOPPC.Factory.SystemFactory">
+    <Position X="28.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Factory\SystemFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
