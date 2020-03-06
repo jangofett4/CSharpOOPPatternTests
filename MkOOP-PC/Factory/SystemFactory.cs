@@ -17,7 +17,7 @@ namespace MkOOPPC.Factory
                     new BasicComponents.Monitor(1920, 1080, 59.9f),
                     new BasicComponents.Monitor(1920, 1080, 59.9f),
                     // Add a case, from factory
-                    new CaseFactory().Create()
+                    new IndexAdapter<BasicComponents.Case>(new CaseFactory().Create())
                 }
             };
         }

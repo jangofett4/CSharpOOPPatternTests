@@ -52,7 +52,7 @@
   <Class Name="MkOOPPC.BasicComponents.PCSystem">
     <Position X="30" Y="8.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAABAA=</HashCode>
       <FileName>BasicComponents\System.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -82,14 +82,14 @@
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
-      <HashCode>AAIAAAAAAAAAAAAEAAAEBAAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <HashCode>AIIAAAAAAAAAAABEAAAEBAAAAAAAAAAAAAAAAAAABgA=</HashCode>
       <FileName>CompositeComponent.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="MkOOPPC.AbstractPCComponent">
     <Position X="21.75" Y="4" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <HashCode>AIAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
       <FileName>AbstractPCComponent.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -121,5 +121,49 @@
       <FileName>Factory\SystemFactory.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="MkOOPPC.AbstractService" Collapsed="true">
+    <Position X="21" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AbstractService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MkOOPPC.DiscountVisitor">
+    <Position X="16.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Visitor\DiscountVisitor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MkOOPPC.SpecificDiscount&lt;T&gt;">
+    <Position X="13.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Visitor\SpecificDiscount.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MkOOPPC.Adapter&lt;T&gt;" Collapsed="true">
+    <Position X="24" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAEAAAAAAAAAAAAgAAAAAAAAAAABAA=</HashCode>
+      <FileName>Adapter\AbstractAdapter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MkOOPPC.IndexAdapter&lt;T&gt;" Collapsed="true">
+    <Position X="21.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACIAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Adapter\IndexAdapter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="MkOOPPC.IVisitor&lt;T&gt;">
+    <Position X="13.75" Y="2.25" Width="4.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Visitor\IVisitor.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

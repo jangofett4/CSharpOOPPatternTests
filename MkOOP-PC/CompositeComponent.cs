@@ -37,6 +37,24 @@ namespace MkOOPPC
             Children.AddRange(cmps);
         }
 
+        public List<T> Get<T>() where T : AbstractPCComponent
+        {
+            List<T> ret = new List<T>();
+            foreach (var c in Children)
+                if ((c is T ct))
+                    ret.Add(ct);
+            return ret;
+        }
+
+        public List<T> GetAdapter<T, A>() where T : Adapter<A> where A : AbstractPCComponent
+        {
+            List<T> ret = new List<T>();
+            foreach (var c in Children)
+                if ((c is T ct))
+                    ret.Add(ct);
+            return ret;
+        }
+
         public void Remove(PCComponent c)
         {
             Children.Remove(c);
@@ -71,6 +89,13 @@ namespace MkOOPPC
                 else
                     sb.Append($"{ c.ToString(level + 1) }");
             return sb.ToString();
+        }
+
+        public override void Accept(IVisitor<AbstractPCComponent> listener)
+        {
+            foreach (var c in Children)
+                c.Accept(listener);
+            listener.Visit(this);
         }
     }
 }

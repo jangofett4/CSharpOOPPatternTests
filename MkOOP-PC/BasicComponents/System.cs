@@ -21,5 +21,12 @@ namespace MkOOPPC.BasicComponents
                     t++;
             return t;
         }
+
+        public override void Accept(IVisitor<AbstractPCComponent> listener)
+        {
+            foreach (var c in Children)
+                c.Accept(listener);
+            // but not self
+        }
     }
 }
